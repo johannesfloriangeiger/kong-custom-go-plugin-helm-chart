@@ -1,0 +1,15 @@
+_format_version: "1.1"
+services:
+  - name: api
+    url: http://api
+    routes:
+      - name: default
+        paths:
+          - /api
+plugins:
+  - name: add-header
+    service: api
+    enabled: true
+    config:
+      header_name: My-Custom-Header
+      message: "Hello NGINX behind Kong!"
