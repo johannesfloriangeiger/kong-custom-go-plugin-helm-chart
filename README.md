@@ -3,7 +3,7 @@ A Helm chart for running NGINX behind Kong with a custom plugin written in Go
 
 # Setup
 
-The following instructions are based on a local Kubernetes cluster provided by Docker Compose with an NGINX Ingress
+The following instructions are based on a local Kubernetes cluster provided by Docker Desktop with an NGINX Ingress
 controller installed and listening on `http://localhost:80` and a Kubernetes registry running
 under `http://localhost:5000`.
 
